@@ -1,0 +1,49 @@
+@color-dark-grey: #333;
+
+.carousel {
+  position: relative;
+  width: 540px;
+  padding: 30px 40px;
+  margin-left: 90px;
+}
+
+.button {
+  position: absolute;
+  top: 80px;
+  img { height: 60px; }
+}
+
+.next { left: 600px; }
+.prev { left: -30px; }
+
+.gallery {
+  width: 560px;
+  overflow: hidden;
+  float: right;
+
+  ul {
+    height: 145px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+
+    font-size: 0;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .images img {
+    width: 168px;
+    height: 130px;
+    margin: 5px;
+    padding: 4px;
+    border: 1px solid @color-dark-grey;
+    background-color: @color-dark-grey;
+    display: block;
+    float: left;
+  }
+}

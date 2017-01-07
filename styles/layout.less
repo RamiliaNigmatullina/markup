@@ -1,3 +1,5 @@
+@import "carousel.less";
+
 @white-color: #fff;
 @color-dark-grey: #333;
 @color-medium-grey: #b0afb0;
@@ -189,32 +191,8 @@ nav {
       margin: 3px;
     }
 
-    #carousel {
-      ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-
-        li {
-          display:block;
-          float: left;
-
-          img {
-            padding: 4px;
-            border: 1px solid @color-dark-grey;
-            background-color: @color-dark-grey;
-          }
-        }
-
-        margin: 10px 100px;
-
-        .space {
-          margin-right: 25px;
-        }
-      }
-    }
-
     #hpage-info {
+      margin-top: 60px;
       h4 { margin: 0.7em 0; }
       img {
         padding:4px;
@@ -377,7 +355,13 @@ nav {
 
     h2 { line-height: 1; }
 
-    #hpage { width: 100%; }
+    #hpage {
+      width: 100%;
+
+      #carousel {
+        display: none;
+      }
+    }
     #dashboard { width: 100%; }
   }
 
@@ -400,4 +384,12 @@ nav {
 
     #right-info { float: left; }
   }
+}
+
+@media screen and (min-width:414px) and (max-width:1200px) {
+  #latest {
+    .one-block { margin: 0 39px; }
+  }
+
+  .carousel { margin-left: 60px; }
 }

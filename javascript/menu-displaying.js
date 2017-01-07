@@ -1,9 +1,3 @@
-// document.getElementById("menu-img").addEventListener("click", myFunction);
-
-// function showNavgation() {
-
-// }
-
 $(document).ready(function() {
   $( "#menu-img" ).click(function() {
     // $(this).rotate(90);
