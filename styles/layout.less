@@ -11,19 +11,6 @@
 @copyright-background-color: #767676;
 @footer-text-color: #cccccc;
 
-.clear {
-  display: block;
-  clear: both;
-
-  &:after {
-    content: ".";
-    height: 0;
-    clear: both;
-    display: block;
-    visibility: hidden;
-  }
-}
-
 a { text-decoration: none; }
 
 #grey-line {
@@ -288,10 +275,24 @@ nav {
 #copyright {
   padding: 0 20px;
   color: @color-light-green;
+  height: 60px;
   background-color: @copyright-background-color;
 
   #left-info { float: left; }
   #right-info { float: right; }
+}
+
+.row {
+  display: block;
+  clear: both;
+
+  &:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width:414px) {
@@ -380,8 +381,8 @@ nav {
   }
 
   #copyright {
+    height: 75px;
     p {margin: 0;}
-
     #right-info { float: left; }
   }
 }
