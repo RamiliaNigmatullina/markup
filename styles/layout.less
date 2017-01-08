@@ -18,6 +18,8 @@ a { text-decoration: none; }
   background-color: @grey-line-background-color;
 }
 
+.clear { clear: both; }
+
 h1, h2, h3 { font-weight: 100; }
 
 body {
@@ -218,7 +220,7 @@ nav {
   }
 }
 
-#footer {
+footer {
   padding: 0 20px;
   color: @footer-text-color;
   background-color: @color-dark-grey;
@@ -275,24 +277,10 @@ nav {
 #copyright {
   padding: 0 20px;
   color: @color-light-green;
-  height: 60px;
   background-color: @copyright-background-color;
 
   #left-info { float: left; }
   #right-info { float: right; }
-}
-
-.row {
-  display: block;
-  clear: both;
-
-  &:after {
-    content: ".";
-    height: 0;
-    clear: both;
-    display: block;
-    visibility: hidden;
-  }
 }
 
 @media screen and (max-width:414px) {
@@ -366,7 +354,7 @@ nav {
     #dashboard { width: 100%; }
   }
 
-  #footer {
+  footer {
     h2, h4 { line-height: 1; }
     padding-right: 40px;
 
