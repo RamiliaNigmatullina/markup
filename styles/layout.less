@@ -129,12 +129,13 @@ nav {
 }
 
 #latest {
+  padding: 0 20px;
   background-color: @latest-panel-background-color;
 
   .one-block {
     display: block;
     float: left;
-    margin: 0 50px;
+    margin: 0 3%;
     width: 220px;
   }
 
@@ -283,7 +284,7 @@ footer {
   #right-info { float: right; }
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:600px) {
   nav {
     ul {
       display: none;
@@ -317,7 +318,12 @@ footer {
       font-size:30px;
     }
 
+    #left-box {
+      clear: both;
+    }
+
     #right-box {
+      float: left;
       margin: 0 0 10px;
 
       ul {
@@ -375,10 +381,6 @@ footer {
   }
 }
 
-@media screen and (min-width:414px) and (max-width:1200px) {
-  #latest {
-    .one-block { margin: 0 39px; }
-  }
-
-  .carousel { margin-left: 60px; }
+@media screen and (max-width:1200px) {
+  .carousel { display: none; }
 }
