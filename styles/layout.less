@@ -18,7 +18,11 @@ a { text-decoration: none; }
   background-color: @grey-line-background-color;
 }
 
-.clear { clear: both; }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 h1, h2, h3 { font-weight: 100; }
 
